@@ -15,6 +15,7 @@
     <license>Apache 2.0</license>
 
     <preference name="URL_SCHEME" />
+    <preference name="PACKAGE" />
 
     <engines>
         <engine name="cordova" version=">=3.4.0"/>
@@ -53,7 +54,7 @@
                     android:launchMode="singleTop"
                     android:theme="@android:style/Theme.Translucent.NoTitleBar" />
             <activity-alias
-                    android:name=".wxapi.WXPayEntryActivity"
+                    android:name="$PACKAGE.wxapi.WXPayEntryActivity"
                     android:exported="true"
                     android:targetActivity="com.pingplusplus.android.PaymentActivity" />
             <activity
